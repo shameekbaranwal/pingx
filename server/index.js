@@ -46,7 +46,8 @@ io.on('connection', socket => {
 	console.log('a new user has connected.');
 
 	socket.on('join-room', data => {
-		const { username, roomID } = data;
+		let { username, roomID } = data;
+		roomID = roomID.toLowerCase();
 
 		// check if the room exists or not
 		if (!rooms.getRoom(roomID)) {

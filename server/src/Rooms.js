@@ -13,6 +13,11 @@ class Rooms {
 
 		this.rooms[roomID] = new Room(roomID);
 
+		// in case someone creates a by making a GET request but nobody joins the room, it stays idle
+		// so this timeout check prevents that.
+		setTimeout(() => {
+			this.checkRoomNotEmpty(roomID);
+		}, 10000);
 		return roomID;
 	}
 
