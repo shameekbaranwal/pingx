@@ -85,7 +85,7 @@ export default function WelcomeScreen({ toggleLoading, showError, setMode }) {
 	useEffect(() => resetAll(), []);
 
 	return (
-		<div className='transition-all px-4 py-4 min-h-[14rem] md:min-h-[16rem] h-full flex flex-col justify-around rounded-md bg-white/80 mt-20 w-full max-w-sm'>
+		<div className='transition-all px-4 py-4 min-h-[13rem] md:min-h-[16rem] h-full flex flex-col justify-around rounded-md bg-white/80 mt-20 w-full max-w-sm'>
 			<InputField
 				name='username'
 				value={usernameInput}

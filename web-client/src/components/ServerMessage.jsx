@@ -11,7 +11,7 @@ export default function ServerMessage({ username, message, timeStamp }) {
 			>
 				<div className={`flex items-center px-4 py-2 bg-transparent`}>
 					<div className='flex-1'>
-						<p className={`text-sm text-center break-all`}>
+						<p className={`text-sm text-center break-words`}>
 							{message}
 						</p>
 					</div>

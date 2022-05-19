@@ -17,7 +17,7 @@ function InputField({ name, value, setValue, className, refValue, onKeyDown }) {
 				ref={refValue}
 				onKeyDown={onKeyDown}
 			/>
-			<p className='absolute transition-all duration-100 -top-3 left-0 text-xs opacity-60 peer-focus:opacity-60 peer-focus:-top-3 peer-focus:left-0 peer-focus:text-xs peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 peer-placeholder-shown:text-base peer-placeholder-shown:opacity-100 cursor-text'>
+			<p className='absolute transition-all duration-100 -top-3 left-0 text-xs opacity-60 peer-focus:opacity-60 peer-focus:-top-3 peer-focus:left-0 peer-focus:text-xs peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 peer-placeholder-shown:text-sm md:peer-placeholder-shown:text-base peer-placeholder-shown:opacity-100 cursor-text'>
 				enter {name}
 			</p>
 		</label>
